@@ -1,0 +1,21 @@
+name: Building Test
+on:
+  push:
+    branches:
+      - master
+  schedule: # every 1st day of the month at 00:26 UTC
+    - cron: '26 0 1 * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Checkout repository"
+      uses: actions/checkout@v2
+    - name: "Build with Jekyll"
+      uses: actions/jekyll-build-pages@v1
+      with:
+        source: ./
+        destination: ./_site
+    - name: "Show size of _site/"
+      run: du -sh _site
