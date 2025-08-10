@@ -15,7 +15,7 @@ encoding: utf-8
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 之滨
+title: 案例
 baseurl: "" # For github pages
 description: >- # You can edit footer in _includes/footer.md
   This is an ultralight demo.
