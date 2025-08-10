@@ -3,7 +3,7 @@ layout: page
 title: 关于
 permalink: /about/
 ---
-设计师：胡之滨</br>
+设计师：胡之滨
 
 公司地址：中国·宁波·鄞州·现代商城
 
