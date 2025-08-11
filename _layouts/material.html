@@ -1,12 +1,16 @@
 ---
 layout: default
 ---
-<article>
-    <div class="material-header">
-        <h1>
-            {{ page.title | escape }}
-        </h1>
-        
-    </div>
-    {{ content }}
-</article>
+<div style="padding: 1em;">
+<span style="font-weight: bold;" >{{ site.materials | size }} 材料</span>
+<ul>
+    {% for material in site.materials %}
+    <li>
+        <a href="{% include relative %}{{ material.url | relative_url }}">{{ material.title | escape }}</a>
+        <p class="material-info">
+            <time datetime="{{ material.date | date_to_xmlschema }}">{{ material.date | date: "%Y-%m-%d" }}</time>
+        </p>
+    </li>
+    {% endfor %}
+</ul>
+</div>
