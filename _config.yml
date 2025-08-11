@@ -48,7 +48,7 @@ exclude:
   - LICENSE
 
 
-
 collections:
   materials:
     output: true
+    permalink: /materials/:title/
