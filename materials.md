@@ -1,9 +1,8 @@
 ---
-layout: material
+layout: page
 title: 材料
 permalink: /materials/
 ---
-
 <div style="padding: 1em;">
 <span style="font-weight: bold;" >{{ site.materials | size }} 种材料</span>
 <ul>
@@ -14,4 +13,3 @@ permalink: /materials/
     {% endfor %}
 </ul>
 </div>
-
