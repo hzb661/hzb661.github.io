@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div style="padding: 1em;">
+<span style="font-weight: bold;" >{{ site.material | size }} 材料</span>
+<ul>
+    {% for material in site.materials %}
+    <li>
+        <a href="{% include relative %}{{ material.url | relative_url }}">{{ material.title | escape }}</a>
+        <p class="material-info">
+            <time datetime="{{ material.date | date_to_xmlschema }}">{{material.date | date: "%Y-%m-%d" }}</time>
+            {% for tag in material.tags %} | <a href="{% include relative %}/tags/#{{ tag | downcase }}">#{{ tag }}</a>{% endfor %}
+        </p>
+    </li>
+    {% endfor %}
+</ul>
+</div>
