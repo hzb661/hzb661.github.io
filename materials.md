@@ -16,7 +16,8 @@ permalink: /materials/
 {% for tag in all_tags %}
   <section id="{{ tag | slugify }}">
     <h3>{{ tag }}</h3>
-    {{ tag[1] | size }} posts
+    {% assign tagged_materials = site.materials | where_exp: "item", "item.tags contains tag" %}
+    <p> {{ tagged_materials | size }} 种材料</p>
     <ul>
       {% for material in site.materials %}
         {% if material.tags contains tag %}
