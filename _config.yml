@@ -46,3 +46,9 @@ exclude:
   - vendor/ruby/
   - README.md
   - LICENSE
+
+
+
+collections:
+  materials:
+    output: true
