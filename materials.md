@@ -4,12 +4,24 @@ title: 材料
 permalink: /materials/
 ---
 
-{% for tag in site.tags %}{% assign tagname = tag[0] %}[#{{ tagname }}](#{{ tagname }}) {% endfor %}
-
-{% for tag in site.tags %}
-### {{ tag[0] }}
-{{ tag[1] | size }} posts
-  {% for post in tag[1] %}
- - [{{ post.title }}]({% include relative %}{{ post.url }})
+<p>
+  {% assign all_tags = site.materials | map: 'tags' | compact | join: ',' | split: ',' | uniq %}
+  {% for tag in all_tags %}
+    <a href="#{{ tag | slugify }}" style="margin-right: 1em;">{{ tag }}</a>
   {% endfor %}
+</p>
+
+<hr>
+
+{% for tag in all_tags %}
+  <section id="{{ tag | slugify }}">
+    <h3>{{ tag }}</h3>
+    <ul>
+      {% for material in site.materials %}
+        {% if material.tags contains tag %}
+          <li><a href="{{ material.url | relative_url }}">{{ material.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
 {% endfor %}
