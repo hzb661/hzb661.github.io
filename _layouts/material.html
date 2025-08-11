@@ -2,12 +2,11 @@
 layout: default
 ---
 <div style="padding: 1em;">
-<span style="font-weight: bold;" >{{ site.materials | size }} 种的材料</span>
+<span style="font-weight: bold;" >{{ site.materials | size }} 种材料</span>
 <ul>
     {% for material in site.materials %}
     <li>
-
-	<a href="{% include relative %}{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <a href="{{ material.url | relative_url }}">{{ material.title | escape }}</a>
     </li>
     {% endfor %}
 </ul>
