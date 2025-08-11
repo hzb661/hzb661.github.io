@@ -6,7 +6,7 @@ layout: default
 <ul>
     {% for material in site.materials %}
     <li>
-        <a href="{% include relative %}{{ material.url | relative_url }}">{{ material.title | escape }}</a>
+        <a href="{{ material.url | relative_url }}">{{ material.title | escape }}</a>
         <p class="material-info">
             <time datetime="{{ material.date | date_to_xmlschema }}">{{ material.date | date: "%Y-%m-%d" }}</time>
         </p>
