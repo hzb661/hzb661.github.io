@@ -1,10 +1,10 @@
 ---
 layout: page
 title: 材料
-permalink: /material/
+permalink: /materials/
 ---
 
-{% for material in site.material %}
+{% for material in site.materials %}
 
 ### {{ material[0] }}
 
