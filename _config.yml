@@ -51,4 +51,4 @@ exclude:
 collections:
   materials:
     output: true
-    permalink: /materials/:title/
+    permalink: /materials/:title.html/
