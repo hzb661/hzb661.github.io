@@ -7,7 +7,7 @@ permalink: /materials/
 <p>
   {% assign all_tags = site.materials | map: 'tags' | compact | join: ',' | split: ',' | uniq %}
   {% for tag in all_tags %}
-    <a href="#{{ tag | slugify }}">(#{{ tagname }})</a>
+    <a href="#{{ tag | slugify }}">#{{ tag }}</a>
   {% endfor %}
 </p>
 
