@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: material
 title:  "钓鱼台9-60"
-tags: 露台
+tags: 11
 ---
 
 | <span style="font-weight:normal;">设计：胡之滨</span> | <span style="font-weight:normal;">类别：别墅露台</span> | <span style="font-weight:normal;">面积：18.5平方</span> |
