@@ -8,9 +8,9 @@ permalink: /materials/
 
 ### {{ material[0] }}
 
-{{ material[1] | size }} posts
-  {% for post in material[1] %}
+{{ material[1] | size }} materials
+  {% for material in material[1] %}
 
- - [{{ post.title }}]({% include relative %}{{ post.url }})
+ - [{{ material.title }}]({% include relative %}{{ material.url }})
    {% endfor %}
    {% endfor %}
