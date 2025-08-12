@@ -11,7 +11,6 @@ permalink: /materials/
   {% endfor %}
 </p>
 
-<hr>
 
 {% for tag in all_tags %}
   <section id="{{ tag | slugify }}">
