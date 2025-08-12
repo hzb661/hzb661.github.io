@@ -23,7 +23,11 @@ tags: 露台
 
 ### 平面图
 
+![](https://github.com/hzb661/hzb661.github.io/blob/main/images/diaoyutai9-60/wechat_2025-08-12_110148_203.png?raw=true)
 
+### 效果图
+
+![](https://github.com/hzb661/hzb661.github.io/blob/main/images/diaoyutai9-60/9e5b6ab7bf54998794282fc86dde7971.jpg?raw=true)
 
 ### 完工实景
 
