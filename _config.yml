@@ -52,3 +52,5 @@ collections:
   materials:
     output: true
     permalink: /materials/:title/
+    notes:
+    output: true
