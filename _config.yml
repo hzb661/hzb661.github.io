@@ -47,8 +47,22 @@ exclude:
   - README.md
   - LICENSE
 
+navbar:
+  - title: 首页
+    url: /
+  - title: 材料
+    url: /materials/
+  - title: 笔记
+    url: /blogs/
+  - title: 分类
+    url: /tags/
+  - title: 关于
+    url: /about/
+
+
 
 collections:
   materials:
     output: true
-
+  blogs:
+    output: true
