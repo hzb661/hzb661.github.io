@@ -6,11 +6,9 @@
         <a class="site-title" href="{% include relative %}" >{{ site.title }}</a>
 
         <div style="display: inline-block">
-           {% for item in site.navbar %}
-   		 | <a href="{{ item.url }}">{{ item.title }}</a>
-	    {% endfor %}
-
-        </div>
+          {% for item in site.navbar %}
+    | <a href="{{ item.url }}">{{ item.title }}</a>
+{% endfor %}
     </header>
     <hr>
     <main><div class="content-wrapper">{{ content }}</div></main>
