@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 笔记
-permalink: /blog/
+permalink: /blogs/
 ---
 
 <p>
