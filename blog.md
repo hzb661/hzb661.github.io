@@ -6,9 +6,7 @@ permalink: /blog/
 
 <p>
   {% assign all_tags = site.blogs | map: 'tags' | compact | join: ',' | split: ',' | uniq %}
-  {% for tag in all_tags %}
-    <a href="#{{ tag | slugify }}">#{{ tag }}</a>
-  {% endfor %}
+  {% for my_page in site.pages %}{% if my_page.title and my_page.noindex != true %} | {{ my_page.title }}{% endif %}{% endfor %}
 </p>
 
 
