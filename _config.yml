@@ -51,7 +51,5 @@ exclude:
 collections:
   materials:
     output: true
-
-collections:
   blogs:
     output: true
