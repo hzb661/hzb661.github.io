@@ -1,15 +1,16 @@
 ---
 layout: page
 title: 笔记
-permalink: /blog/
+permalink: /blogs/
 ---
 
 <p>
-  {% assign all_tags = site.blogs | map: 'tags' | compact | join: ',' | split: ',' | uniq %}
+ {% assign all_tags = site.blogs | map: 'tags' | compact | join: ',' | split: ',' | uniq %}
   {% for tag in all_tags %}
     <a href="#{{ tag | slugify }}">#{{ tag }}</a>
   {% endfor %}
 </p>
+
 
 
 

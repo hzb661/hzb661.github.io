@@ -48,8 +48,6 @@ exclude:
   - LICENSE
 
 navbar:
-  - title: 首页
-    url: /
   - title: 材料
     url: /materials/
   - title: 笔记
